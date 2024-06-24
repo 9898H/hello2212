@@ -17,23 +17,30 @@
  }
  
 }*/
-@media (max-width: 576px) {
+
+
+/* @media (max-width: 576px) {
     .header {
+        display:flex;
         flex-direction: column;
         align-items: center;
       }
-      .header h2{
+      .header h2,
+      header p{
+        display: flex;
         margin-top: 40px;
         font-size: 20px;
         text-align: center;
       }
       
-      .header p {
+       .header p {
+        display: flex;
         font-size: 18px;
         text-align: center;
-      }
+      } 
     
       .header-right {
+        display: flex;
         flex-direction: column;
         align-items: center;
       }
@@ -91,6 +98,328 @@
     .footer p{
         font-size: 18px;
     }
-    }
+    } */
   
+    
+  /* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+   .container {
+    margin: 0px 0px 0px 0px;
+  } 
+   .container-fluid{
+    overflow: hidden;
+   
+   }
+  .header {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .header h2 {
+    margin-left:55px ;
+    margin-top: 35px;
+    font-size: 30px;
+  }
+  .header-right {
+    font-size: 20px;
+    flex-direction: column;
+  }
+   .header p {
+    margin-top: 5px;
+  } 
+  .header-pho{
+    margin-bottom: 6px;
+    margin-left: 8px;
+  }
+  .btn-signup {
+    margin-top: 5px;
+    width: 180px;
+    margin-left: 0px;
+  }
+  .banner {
+    margin: 0px 0px 0px 0px;
+  }
   
+  .text-wrapper {
+    top: 30%;
+    left: 10%;
+  } 
+  .bground {
+    /* margin-left: 20px;
+    margin-right: 20px;
+    height: auto; */
+    display: none;
+  }
+  .input-group-prepend {
+    margin-top: 20px;
+  }
+  .form-group label, .form-control {
+    font-size: 14px;
+  }
+  .packages{
+    margin-left: 0PX;
+    font-size: 27px;
+  }
+  .bestpack{
+    margin-left: 0px;
+  }
+   .nd, .writing, .list ul li, .card-text, .tax {
+    font-size: 14px;
+   
+  }
+  .card-title{
+    line-height: 20px;
+    font-size: 17px;
+  }
+  .nd{
+    line-height: 10px;
+    padding-top: 3px;
+  }
+  .list-ul-li{
+    display: inline-block;
+  }
+  /* .alignrow{
+    margin-left: 0px;
+  } */
+  /* .col-md-4{
+    max-width: 350px;
+    margin-top: -50px;
+    padding-left: 18px;
+  } */
+  /* .col-list{
+    margin-left: -4px;
+    margin-top: -40px;
+  } */
+  .col-md-5{
+    width: 146px;
+  }
+  /* .card-package-card{
+    width: 320px;
+
+  } */
+  .categories, .packages, .bestpack {
+    margin-left: 20px;
+  }
+  .cardstyle {
+    margin-bottom: 75px;
+    margin-top: 30px;
+  }
+  .card-img-top {
+    width: 100%;
+  }
+  .list{
+    display: grid;
+    grid-template-rows:auto;
+  }
+  
+  .btn-light {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .btn-warning {
+    width: 100%;
+  }
+  
+  .footer{
+   
+    width:100%;
+  }
+  .footer-p h2{
+    font-size: 16px;
+   
+  }
+  .chart{
+    font-size: 13px;
+    
+  }
+  .icons{
+    margin-left: 1%;
+  }
+  .footer-p p{
+    font-size: 11px;
+   
+   
+  }
+}
+
+/* Tablets (601px to 768px) */
+ @media (min-width: 601px) and (max-width: 768px) {
+  .container {
+    margin:0px 0px 0px 0px;
+  }
+  .container-fluid{
+    overflow: hidden;
+   
+   }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header h2 {
+    margin-top: 15px;
+    font-size: 30px;
+    align-items: center;
+    padding-left: 43px;
+    margin-top: 17px;
+  }
+  .header-right {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 26px;
+  }
+  .header-pho{
+    padding-left: 0px;
+    margin-bottom: 2px;
+  }
+  .header p {
+    margin-top: 5px;
+  }
+  .btn-signup {
+    width: 180px;
+    height: 25px;
+    margin-top: 5px;
+  }
+  .banner img{
+    border-radius: 10px;
+    margin: 0px 0px 0px 0px;
+  }
+  .banner {
+    align-items: center;
+  }
+  .banner h2{
+    align-items: center;
+    padding-left: 90px;
+  }
+  .text-wrapper {
+    top: 25%;
+    left: 20%;
+  }
+  .bground {
+    margin-left: 30px;
+    margin-right: 30px;
+    height: auto;
+    display: none;
+  }
+  .input-group-prepend {
+    margin-top: 30px;
+  }
+  .form-group label, .form-control {
+    font-size: 15px;
+  }
+  
+  .categories, .packages, .bestpack {
+    margin-left: 30px;
+  }
+  .cardstyle {
+    margin-bottom: 15px;
+  }
+  .card-img-top {
+    width: 100%;
+  }
+  .card-title, .nd, .writing, .list ul li, .card-text, .tax {
+    font-size: 15px;
+  }
+  .btn-light {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .btn-warning {
+    width: 100%;
+  }
+  .footer{
+   
+    width:100%;
+  }
+  .footer-p h2{
+    font-size: 16px;
+   
+  }
+  .chart{
+    font-size: 13px;
+    
+  }
+  .icons{
+    margin-left: 1%;
+  }
+  .footer-p p{
+    font-size: 11px;
+   
+   
+  }
+} 
+
+/* Laptops (769px to 1200px) */
+/* @media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .header h2 {
+    font-size: 30px;
+  }
+  .btn-signup {
+    width: 140px;
+    height: 30px;
+  }
+  .text-wrapper {
+    top: 20%;
+    left: 30%;
+  }
+  .bground {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: auto;
+    display: none;
+  }
+  .form-group label, .form-control {
+    font-size: 17px;
+  }
+  .categories, .packages, .bestpack {
+    margin-left: 40px;
+  }
+  .cardstyle {
+    margin-bottom: 20px;
+  }
+  .card-title, .nd, .writing, .list ul li, .card-text, .tax {
+    font-size: 17px;
+  }
+  .footer{
+    display: none;
+  }
+} */
+
+/* Desktops (above 1200px) */
+/* @media (min-width: 1201px) {
+  .container {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .header h2 {
+    font-size: 33px;
+  }
+  .btn-signup {
+    width: 150px;
+    height: 30px;
+  }
+  .text-wrapper {
+    top: 20%;
+    left: 40%;
+  }
+  .bground {
+    margin-left: 60px;
+    margin-right: 60px;
+    height: auto;
+  }
+  .form-group label, .form-control {
+    font-size: 19px;
+  }
+  .categories, .packages, .bestpack {
+    margin-left: 60px;
+  }
+  .cardstyle {
+    margin-bottom: 25px;
+  }
+  .card-title, .nd, .writing, .list ul li, .card-text, .tax {
+    font-size: 19px;
+  }
+} */

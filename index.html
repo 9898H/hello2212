@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-<div class="wrapper">
+<div class="container-fluid">
   <div class="content">
     <section class="top-bar">
       <div class="container">
@@ -31,43 +31,50 @@
       </div>
     </section>
     <div class="banner">
-    <h2>Holiday Packages</h2>
+      <img src="./banner.png" class="image-fluid" />
+      <div class="text-wrapper">
+        <h2>Holiday Packages</h2>
+      </div>
     </div>
+    <!-- <div class="banner">
+    <h2>Holiday Packages</h2>
+    </div> -->
     <section class="middle">
           <div class="bground">
-              <form class="row justify-content-center">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="col-md-3 mb-3 justify-content-center">
-                      <label>Starting From</label>
-                        <div class="align">
-                          <input type="text" class="form-control" value="Wayanad,Kerala">
-                        </div>
-                    </div>
-                    <div class="item1"></div>
-                    <div class="col-md-3 mb-3">
-                       <label>Going to</label>
-                        <input type="text" class="form-control" value="Kashmir,India" >
-                    </div>
-                    <div class="item1"></div>
-                    <div class="col-md-3 mb-3">
-                        <label>Departure Date</label>
-                        <input type="text" class="form-control" value="10 March, Friday">
-                    </div>
-                    <div class="item1"></div>
-                    <div class="col-md-3 mb-3">
-                        <label>Hotel Category</label>
-                        <select class="form-control">
-                            <option>Select Category</option>
-                        </select>
-                    </div>
-                    <div class="item1"></div>
-                    <div class="col-md-3 mb-3">
-                        <label>Select Meal Plan</label>
-                        <select class="form-control">
-                            <option>Select Meal Plan</option>
-                        </select>
-                    </div>
+              <form class="row starting">
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="form-group item1">
+                                <label>Starting From</label>
+                                <input type="text" class="form-control" value="Wayanad,Kerala">
+                            </div>
+                            <div class="form-group item1">
+                              <label>Going to</label>
+                              <input type="text" class="form-control" value="Kashmir,India" >
+                            </div>
+                            <div class="form-group item1">
+                              <label>Departure Date</label>
+                              <input type="text" class="form-control" value="10 March, Friday">
+                            </div>
+                            <div class="form-group item1">
+                              <label>Hotel Category</label>
+                              <select class="form-control">
+                                  <option>Select Category</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Select Meal Plan</label>
+                              <select class="form-control">
+                                  <option>Select Meal Plan</option>
+                              </select>
+                            </div>
+                      
+                   
+                      
+                        
+                      
+                        
+                    
                   </div>
                 </div>
               </form>
@@ -92,14 +99,14 @@
           <div class="bestpack">
               Find the best packages from here
           </div>
-          <div class="alignrow">
-            <div class="row">
-                <div class="col-md-4">
+          
+            <div class="row alignrow">
+                <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="cardstyle">
                       <div class="card-package-card">
                           <img src="image.png" class="card-img-top">
                           <!--<div class="card--details">-->
-                          <div class="row">
+                          <div class="row row-card">
                             <div class="col-md-8">
                               <h5 class="card-title">Fantastic Dubai Group Departure</h5>
                             </div>
@@ -107,27 +114,33 @@
                               <p class="nd">05N/05D</p>
                             </div>
                           </div>
-                          <div class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</div><hr>
+                          <p class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</p><hr>
                           <div class="list">
-                            <div>
-                            <ul>
-                                <li>Star Hotel</li>
-                                <li>Airport pickup & drop</li>
-                                <li>Private Car</li>
-                                <li>House boat stay</li>
-                            </ul>
-                            </div>
-                            <div><ul>
-                                <li>Selected meals</li>
-                            </ul>
+                            <div class="row row-star">
+                              
+                            
+                              <div class="col-md-12 col-sm-12 ">
+                                <ul>
+                                    <li>Star Hotel</li>
+                                    <li>Airport pickup & drop</li>
+                                    <li>Private Car</li>
+                                    <li>House boat stay</li>
+                                    <li>Selected meals</li>
+                                </ul>
+                              </div>
+                              <!-- <div class="col-md-6 col-sm-12 col-list">
+                                <ul>
+                                  <li>Selected meals</li>
+                                </ul>
+                              </div> -->
                             </div>
                           </div>
                           <!--<div class="rate">-->
-                          <div class="row">
+                          <div class="row row-rate">
                               <div class="col-md-7">
                                 <p class="card-text">
-                                  <b>Rs. 12000</b>/Person (Including Tax)<br>
-                                 <b>Rs. 3000</b> /Child (Including Tax)
+                                  Rs. 12000<span class="tax">/Person (Including Tax)</span><br>
+                                 Rs. 3000 <span class="tax">/Child (Including Tax)</span>
                                 </p>
                               </div>
                               <div class="col-md-5">
@@ -137,11 +150,11 @@
                       </div>
                   </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-4 col-sm-6 ">
                 <div class="cardstyle">
-                <div class="card-package-card">
+                  <div class="card-package-card">
                     <img src="image.png" class="card-img-top">
-                    <div class="row">
+                    <div class="row row-card">
                       <div class="col-md-8">
                         <h5 class="card-title">Fantastic Dubai Group Departure</h5>
                       </div>
@@ -149,39 +162,42 @@
                         <p class="nd">05N/05D</p>
                       </div>
                     </div>
-                  <div class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</div><hr>
-                  <div class="list">
-                    <div>
-                    <ul>
-                        <li>Star Hotel</li>
-                        <li>Airport pickup & drop</li>
-                        <li>Private Car</li>
-                        <li>House boat stay</li>
-                    </ul>
-                    </div>
-                    <div><ul>
-                        <li>Selected meals</li>
-                    </ul></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-7">
-                      <p class="card-text">
-                        <b>Rs. 12000</b>/Person (Including Tax)<br>
-                        <b>Rs. 3000</b>/Child (Including Tax)
-                      </p>
-                    </div>
-                    <div class="col-md-5">
+                    <p class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</p><hr>
+                    <div class="list">
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 " >
+                        <ul>
+                          <li>Star Hotel</li>
+                          <li>Airport pickup & drop</li>
+                          <li>Private Car</li>
+                          <li>House boat stay</li>
+                          <li>Selected meals</li>
+                        </ul>
+                        </div>
+                        <!-- <div class="col-md-6 col-sm-12 col-list"><ul>
+                          
+                        </ul></div> -->
+                      </div>
+                   </div>
+                   <div class="row row-rate">
+                      <div class="col-md-7">
+                        <p class="card-text">
+                          Rs. 12000<span class="tax">/Person (Including Tax)</span><br>
+                          Rs. 3000<span class="tax">/Child (Including Tax)</span>
+                        </p>
+                      </div>
+                      <div class="col-md-5">
                         <a href="#" class="btn btn-warning"><p class="detail">View Details</p></a>
+                      </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-4 col-sm-6 ">
           <div class="cardstyle">
           <div class="card-package-card">
               <img src="image.png" class="card-img-top">
-              <div class="row">
+              <div class="row row-card">
                 <div class="col-md-8">
                   <h5 class="card-title">Fantastic Dubai Group Departure</h5>
                 </div>
@@ -189,25 +205,31 @@
                   <p class="nd">05N/05D</p>
                 </div>
               </div>
-            <div class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</div><hr>
+            <p class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</p><hr>
             <div class="list">
-              <div>
-              <ul>
-                  <li>Star Hotel</li>
-                  <li>Airport pickup & drop</li>
-                  <li>Private Car</li>
-                  <li>House boat stay</li>
-              </ul>
-              </div>
-              <div><ul>
-                  <li>Selected meals</li>
-              </ul></div>
-            </div>
               <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <ul>
+                      <li>Star Hotel</li>
+                      <li>Airport pickup & drop</li>
+                      <li>Private Car</li>
+                      <li>House boat stay</li>
+                      <li>Selected meals</li>
+                  </ul>
+                  </div>
+                  <!-- <div class="col-md-6 col-sm-12 col-list">
+                    <ul>
+                      <li>Selected meals</li>
+                  </ul>
+                  </div> -->
+              </div>
+              
+            </div>
+              <div class="row row-rate">
                 <div class="col-md-7">
                   <p class="card-text">
-                    <b>Rs. 12000</b>/Person (Including Tax)<br>
-                    <b>Rs. 3000</b>/Child (Including Tax)
+                    Rs. 12000<span class="tax">/Person (Including Tax)</span><br>
+                    Rs. 3000<span class="tax">/Child (Including Tax)</span>
                   </p>
                 </div>
                 <div class="col-md-5">
@@ -217,11 +239,11 @@
           </div>
       </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4 col-md-4 col-sm-6 ">
     <div class="cardstyle">
     <div class="card-package-card">
         <img src="image.png" class="card-img-top">
-        <div class="row">
+        <div class="row row-card">
           <div class="col-md-8">
             <h5 class="card-title">Fantastic Dubai Group Departure</h5>
           </div>
@@ -229,25 +251,26 @@
             <p class="nd">05N/05D</p>
           </div>
         </div>
-      <div class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</div><hr>
+      <p class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</p><hr>
       <div class="list">
-        <div>
-        <ul>
-            <li>Star Hotel</li>
-            <li>Airport pickup & drop</li>
-            <li>Private Car</li>
-            <li>House boat stay</li>
-        </ul>
-        </div>
-        <div><ul>
-            <li>Selected meals</li>
-        </ul></div>
-      </div>
       <div class="row">
+          <div class="col-md-12 col-sm-12">
+          <ul>
+              <li>Star Hotel</li>
+              <li>Airport pickup & drop</li>
+              <li>Private Car</li>
+              <li>House boat stay</li>
+              <li>Selected meals</li>
+          </ul>
+          </div>
+      </div>
+      
+      </div>
+      <div class="row row-rate">
         <div class="col-md-7">
           <p class="card-text">
-            <b>Rs. 12000</b>/Person (Including Tax)<br>
-            <b>Rs. 3000</b>/Child (Including Tax)
+            Rs. 12000<span class="tax">/Person (Including Tax)</span><br>
+            Rs. 3000<span class="tax">/Child (Including Tax)</span>
           </p>
         </div>
         <div class="col-md-5">
@@ -257,11 +280,11 @@
     </div>
   </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4 col-md-4 col-sm-6 ">
     <div class="cardstyle">
     <div class="card-package-card">
         <img src="image.png" class="card-img-top">
-        <div class="row">
+        <div class="row row-card">
           <div class="col-md-8">
             <h5 class="card-title">Fantastic Dubai Group Departure</h5>
           </div>
@@ -269,25 +292,29 @@
             <p class="nd">05N/05D</p>
           </div>
         </div>
-      <div class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</div><hr>
+      <p class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</p><hr>
       <div class="list">
-        <div>
-        <ul>
-            <li>Star Hotel</li>
-            <li>Airport pickup & drop</li>
-            <li>Private Car</li>
-            <li>House boat stay</li>
-        </ul>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 ">
+          <ul>
+              <li>Star Hotel</li>
+              <li>Airport pickup & drop</li>
+              <li>Private Car</li>
+              <li>House boat stay</li>
+              <li>Selected meals</li>
+          </ul>
+          </div> 
+          <!-- <div class="col-md-6 col-sm-12 col-list"><ul>
+              <li>Selected meals</li>
+          </ul></div> -->
         </div>
-        <div><ul>
-            <li>Selected meals</li>
-        </ul></div>
       </div>
-      <div class="row">
+      
+      <div class="row row-rate">
         <div class="col-md-7">
           <p class="card-text">
-            <b>Rs. 12000</b>/Person (Including Tax)<br>
-            <b>Rs. 3000</b>/Child (Including Tax)
+             Rs. 12000<span class="tax">/Person (Including Tax)</span><br>
+             Rs. 3000<span class="tax">/Child (Including Tax)</span>
           </p>
         </div>
         <div class="col-md-5">
@@ -297,11 +324,11 @@
     </div>
   </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4 col-md-4 col-sm-6 ">
     <div class="cardstyle">
     <div class="card-package-card">
         <img src="image.png" class="card-img-top">
-        <div class="row">
+        <div class="row row-card">
           <div class="col-md-8">
             <h5 class="card-title">Fantastic Dubai Group Departure</h5>
           </div>
@@ -309,25 +336,31 @@
             <p class="nd">05N/05D</p>
           </div>
         </div>
-      <div class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</div><hr>
+      <p class="writing">2night Munnar,01 Night Thekkady & 01 Night Alleppey</p><hr>
       <div class="list">
-        <div>
-        <ul>
-            <li>8-star Hotel</li>
-            <li>Airport pickup & drop</li>
-            <li>Private Car</li>
-            <li>House boat stay</li>
-        </ul>
-        </div>
-        <div><ul>
-            <li>Selected meals</li>
-        </ul></div>
-      </div>
         <div class="row">
+          <div class="col-md-12 col-sm-12">
+          <ul>
+              <li>8-star Hotel</li>
+              <li>Airport pickup & drop</li>
+              <li>Private Car</li>
+              <li>House boat stay</li>
+              <li>Selected Meals</li>
+          </ul>
+          </div> 
+          <!-- <div class="col-md-6 col-sm-12 col-list">
+            <ul>
+              
+           </ul>
+          </div> -->
+        </div>
+      </div>
+      
+        <div class="row row-rate">
           <div class="col-md-7">
             <p class="card-text">
-              <b>Rs. 12000</b>/Person (Including Tax)<br>
-              <b>Rs. 3000</b>/Child (Including Tax)
+              Rs. 12000<span class="tax">/Person (Including Tax)</span><br>
+              Rs. 3000<span class="tax">/Child (Including Tax)</span>
             </p>
           </div>
           <div class="col-md-5">
@@ -336,7 +369,7 @@
       </div>
     </div>
   </div>
-  </div></div>
+  </div>
       </section>
       <section>
         <div class="text-center">
@@ -344,20 +377,23 @@
         </div>
       </section>
   </div>
-  
-  <div id="footer">
-    <div class="policy">
-    <div class="footer-p"><h2>Privacy Policy</h2>
-      <p>Chart your trip respects your privacy and is committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.</p>
-      <h1>© 2023 CHART YOUR TRIP</h1>
+  </div>
+  <div class="row footer">
+    <div class="col-lg-9 col-md-7 col-sm-12  footer-p"><h2>Privacy Policy</h2>
+      <p>
+        Chart your trip respects your privacy and is committed to protecting your personal data. 
+        This privacy policy will inform you as to how we look after your personal data when you 
+        visit our website (regardless of where you visit it from) and tell you about your privacy 
+        rights and how the law protects you.
+      </p>
+     
     </div>
-    
-      <div class="icons">
+      <div class="col-lg-3 col-md-5 col-sm-12 icons ">
         <a href="#" class="ico"><img src="twitter.png" ></a>
         <a href="#" class="ico"><img src="twitter.png" ></a>
         <a href="#" class="ico"><img src="twitter.png" ></a>
       </div>
-    </div>
+      <div class="chart">© 2023 CHART YOUR TRIP</div>
   </div>
 </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
