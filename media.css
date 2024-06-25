@@ -1,23 +1,3 @@
-/*@media (max-width: 768px) {
-  .header h2,
-  .header p {
-    font-size: 20px;
-    line-height: 30px;
-  }
- .banner{
-  background:url('./banner.png' );
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 30px;
- }
- .banner h2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
- 
-}*/
-
 
 /* @media (max-width: 576px) {
     .header {
@@ -116,9 +96,9 @@
    
   }
   .header h2 {
-    margin-left:55px ;
+    margin-left:62px ;
     margin-top: 35px;
-    font-size: 30px;
+    font-size: 29px;
   }
   .header-right {
     font-size: 20px;
@@ -141,14 +121,19 @@
   }
   
   .text-wrapper {
-    top: 30%;
-    left: 10%;
-  } 
+    top: -30%;
+    left: 17%;
+  }  
+  .banner h2{
+    font-size: 30px;
+    /* margin-left: 1%;
+    margin-top: -16px; */
+  }
   .bground {
-    /* margin-left: 20px;
+    margin-left: 20px;
     margin-right: 20px;
-    height: auto; */
-    display: none;
+    height: auto;
+    /* display: none; */
   }
   .input-group-prepend {
     margin-top: 20px;
@@ -190,19 +175,22 @@
     margin-left: -4px;
     margin-top: -40px;
   } */
-  .col-md-5{
+  /* .col-md-5{
     width: 146px;
-  }
-  /* .card-package-card{
-    width: 320px;
-
   } */
+   .card-package-card{
+    width: 290px;
+  }
+  .alignrow{
+    margin-left: 6%;
+  }
   .categories, .packages, .bestpack {
     margin-left: 20px;
+    margin-bottom: 10px;
   }
   .cardstyle {
-    margin-bottom: 75px;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-top: 2px;
   }
   .card-img-top {
     width: 100%;
@@ -233,7 +221,9 @@
     
   }
   .icons{
-    margin-left: 1%;
+    /* margin-left: 1%; */
+    padding-left: 0px;
+    margin-bottom: 1px;
   }
   .footer-p p{
     font-size: 11px;
@@ -288,7 +278,7 @@
   }
   .banner h2{
     align-items: center;
-    padding-left: 90px;
+    padding-left: 7px;
   }
   .text-wrapper {
     top: 25%;
@@ -298,7 +288,7 @@
     margin-left: 30px;
     margin-right: 30px;
     height: auto;
-    display: none;
+    /* display: none; */
   }
   .input-group-prepend {
     margin-top: 30px;
@@ -310,14 +300,31 @@
   .categories, .packages, .bestpack {
     margin-left: 30px;
   }
+  .alignrow{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .cardstyle {
-    margin-bottom: 15px;
+    margin-bottom:8px;
+    margin-top: 0px;
   }
   .card-img-top {
     width: 100%;
   }
-  .card-title, .nd, .writing, .list ul li, .card-text, .tax {
+  .card-title, .nd, .writing, .card-text, .tax {
     font-size: 15px;
+  }
+  .list ul li{
+    display: block;
+    font-size: 15px;
+  }
+  .view-det{
+    padding-left: 0px;
+    margin-top: 14px;
+
+  }
+  .view-tax{
+    padding-right: 0px;
   }
   .btn-light {
     width: 100%;
@@ -325,6 +332,9 @@
   }
   .btn-warning {
     width: 100%;
+  }
+  .row-rate{
+    margin-bottom: 18px;
   }
   .footer{
    
@@ -339,23 +349,33 @@
     
   }
   .icons{
-    margin-left: 1%;
+    margin-top: 7px;
+    padding-left: 0px;
+    margin-bottom: 7px;
   }
   .footer-p p{
     font-size: 11px;
-   
+    margin-bottom: 0px;
    
   }
 } 
 
 /* Laptops (769px to 1200px) */
-/* @media (min-width: 769px) and (max-width: 1200px) {
-  .container {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
+@media (min-width: 769px) and (max-width: 1200px) {
+   /* .container {
+    margin-right: 14%;
+    margin-left: 14%;
+  }  */
+    .top-bar{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   .header h2 {
     font-size: 30px;
+  }
+  .banner{
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .btn-signup {
     width: 140px;
@@ -369,24 +389,75 @@
     margin-left: 40px;
     margin-right: 40px;
     height: auto;
-    display: none;
+    /* display: none; */
   }
   .form-group label, .form-control {
     font-size: 17px;
   }
   .categories, .packages, .bestpack {
-    margin-left: 40px;
+    margin-left: 5%;
+  } 
+   .alignrow{
+    margin-left: 5%;
+    margin-right: 5%;
+   }
+  .cardstyle {
+    margin-bottom: 25px;
   }
+  
+   /* .packages, .bestpack {
+    margin-left: ;
+  } */
+  
   .cardstyle {
     margin-bottom: 20px;
   }
   .card-title, .nd, .writing, .list ul li, .card-text, .tax {
     font-size: 17px;
   }
-  .footer{
-    display: none;
+  .title-col{
+    padding-right: 0px;
   }
-} */
+  .title-col-sec{
+    padding-left: 0px;
+  }
+  .view-tax{
+    padding-right: 0px;
+  }
+  .view-det{
+    padding-left: 15px;
+    padding-right: 0px;
+    margin-top: 15px;
+    margin-right: 2px;
+  }
+  .row-rate{
+    padding-bottom: 15px;
+  }
+  /* .footer{
+    padding-top: 0%;
+    padding-left: 0%;
+    width:100%;
+  }
+  .footer-p h2{
+    font-size: 16px;
+  }
+  .footer-p p{
+    font-size: 11px;
+    margin-bottom: 0px;
+   
+  }
+  .chart{
+    font-size: 13px;
+    
+  }/*/*
+  .icons{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 0px;
+  } 
+   
+  }
+
 
 /* Desktops (above 1200px) */
 /* @media (min-width: 1201px) {
@@ -394,6 +465,10 @@
     margin-right: 60px;
     margin-left: 60px;
   }
+   .top-bar{
+    margin-left: 5%;
+    margin-right: 5%;
+   }
   .header h2 {
     font-size: 33px;
   }
@@ -405,21 +480,57 @@
     top: 20%;
     left: 40%;
   }
+  .banner{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .bground {
     margin-left: 60px;
     margin-right: 60px;
     height: auto;
+    display: none;
   }
+
   .form-group label, .form-control {
     font-size: 19px;
   }
-  .categories, .packages, .bestpack {
-    margin-left: 60px;
-  }
+   .categories, .packages, .bestpack {
+    margin-left: 5%;
+  } 
+   .alignrow{
+    margin-left: 5%;
+    margin-right: 5%;
+   }
   .cardstyle {
     margin-bottom: 25px;
   }
-  .card-title, .nd, .writing, .list ul li, .card-text, .tax {
+  .card-title, .nd,  .list ul li, .card-text, .tax {
     font-size: 19px;
   }
-} */
+  .writing{
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .row-rate{
+    padding-bottom: 18px;
+  }
+  .view-det{
+    padding-left: 0px;
+    margin-top: 14px;
+  }
+  .card-text{
+    line-height: 23px;
+  }
+  .view-tax{
+    padding-right: 0px;
+  }
+}
+  */
+  @media (min-width: 1900px){
+    .container{
+      margin-left: 346px;
+    }
+    /* .header-right{
+      margin-right: -400px;
+    } */
+  }
