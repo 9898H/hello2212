@@ -182,15 +182,21 @@
     width: 290px;
   }
   .alignrow{
-    margin-left: 6%;
+   margin-left: 2rem;
+   margin-right: 2rem;
+  
   }
-  .categories, .packages, .bestpack {
-    margin-left: 20px;
+  .categories{
+    margin-left: 2rem;
+    margin-right: 2rem; 
     margin-bottom: 10px;
   }
   .cardstyle {
     margin-bottom: 10px;
     margin-top: 2px;
+  }
+  .title-col-sec{
+    padding-left: 25px;
   }
   .card-img-top {
     width: 100%;
@@ -297,12 +303,12 @@
     font-size: 15px;
   }
   
-  .categories, .packages, .bestpack {
-    margin-left: 30px;
+  .categories {
+    margin-left:6%;
   }
   .alignrow{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   .cardstyle {
     margin-bottom:8px;
@@ -313,6 +319,9 @@
   }
   .card-title, .nd, .writing, .card-text, .tax {
     font-size: 15px;
+  }
+  .title-col-sec{
+    padding-left: 0px;
   }
   .list ul li{
     display: block;
@@ -331,7 +340,7 @@
     margin-bottom: 10px;
   }
   .btn-warning {
-    width: 100%;
+    max-width: 90%;
   }
   .row-rate{
     margin-bottom: 18px;
@@ -383,7 +392,7 @@
   }
   .text-wrapper {
     top: 20%;
-    left: 30%;
+    left: 40%;
   }
   .bground {
     margin-left: 40px;
@@ -398,8 +407,8 @@
     margin-left: 5%;
   } 
    .alignrow{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
    }
   .cardstyle {
     margin-bottom: 25px;
@@ -424,11 +433,18 @@
   .view-tax{
     padding-right: 0px;
   }
+  .btn-warning{
+    width: 90%;
+  }
   .view-det{
-    padding-left: 15px;
-    padding-right: 0px;
+   
+    /* margin-right: 2px; */
     margin-top: 15px;
-    margin-right: 2px;
+    padding-left: 0px;
+  }
+  .btn-light {
+    width: 100%;
+    margin-bottom: 10px;
   }
   .row-rate{
     padding-bottom: 15px;
@@ -455,15 +471,15 @@
     margin-bottom: 20px;
     padding-left: 0px;
   } 
-   
-  }
+} 
+  
 
 
 /* Desktops (above 1200px) */
-/* @media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width:1500px){
   .container {
     margin-right: 60px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
   }
    .top-bar{
     margin-left: 5%;
@@ -494,12 +510,15 @@
   .form-group label, .form-control {
     font-size: 19px;
   }
-   .categories, .packages, .bestpack {
-    margin-left: 5%;
+   .categories{
+    margin-left: 6%;
   } 
    .alignrow{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+   }
+   .title-col-sec{
+    padding-left: 0px;
    }
   .cardstyle {
     margin-bottom: 25px;
@@ -514,9 +533,75 @@
   .row-rate{
     padding-bottom: 18px;
   }
+  .card-text{
+    line-height: 23px;
+  }
+  .view-tax{
+    padding-right: 0px;
+  }
   .view-det{
-    padding-left: 0px;
+    padding-left: 1rem;
     margin-top: 14px;
+  }
+}
+@media (min-width: 1601px){
+  /* .container {
+    margin-right: 60px;
+    margin-left: 60px;
+  } */
+   .top-bar{
+    margin-left: 5%;
+    margin-right: 5%;
+   }
+  
+  .header h2 {
+    font-size: 33px;
+    /* flex-grow: ; */
+  }
+  .btn-signup {
+    width: 150px;
+    height: 30px;
+  }
+  .text-wrapper {
+    top: 20%;
+    left: 40%;
+  }
+  .banner{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .bground {
+    margin-left: 60px;
+    margin-right: 60px;
+    height: auto;
+    display: none;
+  }
+
+  .form-group label, .form-control {
+    font-size: 19px;
+  }
+   .categories{
+    margin-left: 6%;
+  } 
+   .alignrow{
+    margin-left: 6%;
+    margin-right: 6%;
+   }
+   .title-col-sec{
+    padding-left: 0px;
+   }
+  .cardstyle {
+    margin-bottom: 25px;
+  }
+  .card-title, .nd,  .list ul li, .card-text, .tax {
+    font-size: 19px;
+  }
+  .writing{
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .row-rate{
+    padding-bottom: 18px;
   }
   .card-text{
     line-height: 23px;
@@ -524,13 +609,17 @@
   .view-tax{
     padding-right: 0px;
   }
+  .view-det{
+    padding-left:3rem;
+    margin-top: 14px;
+  }
+
 }
-  */
-  @media (min-width: 1900px){
+  /* @media (min-width: 1900px){
     .container{
       margin-left: 346px;
-    }
+    } */
     /* .header-right{
       margin-right: -400px;
     } */
-  }
+  
